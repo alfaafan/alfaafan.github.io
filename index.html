@@ -13,7 +13,7 @@
   </head>
   <!-- Navbar -->
   <body class="min-h-screen">
-    <nav class="border shadow-md p-1 flex gap-5 align-middle sticky top-0 bg-slate-50">
+    <!-- <nav class="border shadow-md p-1 flex gap-5 align-middle sticky top-0 bg-slate-50">
       <div class="nav-link flex w-full justify-between">
         <div class="brand p-3">
           <a href="/" class="font-bold uppercase text-xl hover:text-white">Alfaafan</a>
@@ -25,7 +25,45 @@
           <a href="#contact">Contact</a>
         </div>
       </div>
+    </nav> -->
+    <nav class="bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="text-white text-xl font-bold">Logo</a>
+          </div>
+
+          <!-- Menu items -->
+          <div class="hidden md:block">
+            <ul class="flex space-x-4">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">About</a></li>
+              <li><a href="#" class="text-white">Services</a></li>
+              <li><a href="#" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Mobile menu toggle -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="focus:outline-none text-white">
+              <i class="fa-solid fa-angle-down text-white" id="down-icon"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <ul class="flex flex-col space-y-4 mt-2">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">About</a></li>
+            <li><a href="#" class="text-white">Services</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
     <!-- Navbar End -->
     <div class="container flex flex-col justify-center items-center">
       <!-- Hero -->
@@ -33,14 +71,14 @@
         <div class="profile text-center">
           <img src="https://akcdn.detik.net.id/visual/2021/10/17/robert-pattinson-di-the-batman-1_169.jpeg?w=650" alt="me" width="300px" class="place-self-center rounded-lg m-auto" />
           <div class="profile-info md:text-left text-2xl">
-            <h3 class="md:text-3xl max-sm:mt-3 mb-3">Hello, I'm</h3>
+            <h3 class="md:text-3xl max-sm:mt-3 mb-3 font-thin">Hello, I'm</h3>
             <h1 class="text-5xl md:text-8xl font-bold mb-3">
               Alfaafan <br />
               Yusufa <br />
               Achmad
             </h1>
             <h3 class="md:text-3xl font-thin mb-3">Web Developer | Software Engineer</h3>
-            <button class="rounded-full p-3 border-2 border-black bg-black hover:bg-white text-white hover:text-black text-lg"><a href="https://www.linkedin.com/in/alfaafan-yusufa-achmad-712953174/">Resume</a></button>
+            <button class="rounded-full mt-3 p-3 border-2 border-black bg-black hover:bg-white text-white hover:text-black text-lg"><a href="https://www.linkedin.com/in/alfaafan-yusufa-achmad-712953174/">Resume</a></button>
           </div>
         </div>
         <div class="scroll-down sm:hidden border rounded-full h-10 w-10 place-content-center grid shadow-md shadow-neutral-300">
@@ -52,7 +90,7 @@
       <!-- Hero end -->
       <!-- About -->
       <section id="about" class="border min-h-screen w-screen p-5">
-        <h1 class="font-bold text-3xl uppercase text-center mt-3 mb-5">About me</h1>
+        <h1 class="font-bold text-3xl uppercase text-center mt-5 mb-5">About me</h1>
         <p class="font-extralight mb-3">
           As an International Relations graduate with a passion for technology, I am seeking a challenging role as a Web Developer. I am a quick learner, detail-oriented, and passionate about developing creative solutions to complex
           problems.
@@ -61,21 +99,15 @@
           With my diverse skill set and passion for technology, I am excited about the opportunity to bring a fresh perspective to the world of web development and contribute to creating exceptional digital experiences for clients.
         </p>
         <div class="about-info mt-5">
-          <!-- <div class="about-items mb-3">
-            <h6>
-              Name:
-              <span class="text-neutral-700">Alfaafan Yusufa Achmad</span>
-            </h6>
-          </div> -->
           <div class="about-items mb-3">
             <h6>
-              Location:
+              <i class="fa-solid fa-location-dot me-1"></i>Location:
               <span class="text-neutral-700">Indonesia</span>
             </h6>
           </div>
           <div class="about-items mb-3">
             <h6>
-              Freelance:
+              <i class="fa-solid fa-briefcase me-1"></i>Freelance:
               <span class="text-neutral-700">Available</span>
             </h6>
           </div>
@@ -86,6 +118,57 @@
         </div>
       </section>
       <!-- About end -->
+      <!-- Skills -->
+      <section id="skills" class="border min-h-screen w-screen p-5">
+        <h1 class="mt-5 text-3xl text-center uppercase font-bold">Skills</h1>
+        <div class="skills-card-container">
+          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+            <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML" class="w-52 m-auto rounded-lg mb-4 p-3" />
+            <h6 class="text-center text-xl font-bold mb-2">HTML</h6>
+            <p class="text-gray-700 text-center">Card description goes here.</p>
+          </div>
+          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+            <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS" class="w-52 m-auto rounded-lg mb-4 p-3" />
+            <h6 class="text-center text-xl font-bold mb-2">CSS</h6>
+            <p class="text-gray-700 text-center">Card description goes here.</p>
+          </div>
+          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+            <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="Javascript" class="w-52 m-auto rounded-lg mb-4 p-3" />
+            <h6 class="text-center text-xl font-bold mb-2">Javascript</h6>
+            <p class="text-gray-700 text-center">Card description goes here.</p>
+          </div>
+          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+            <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" class="w-52 m-auto rounded-lg mb-4 p-3" />
+            <h6 class="text-center text-xl font-bold mb-2">React.js</h6>
+            <p class="text-gray-700 text-center">Card description goes here.</p>
+          </div>
+          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+            <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js" class="w-52 m-auto rounded-lg mb-4 p-3" />
+            <h6 class="text-center text-xl font-bold mb-2">Next.js</h6>
+            <p class="text-gray-700 text-center">Card description goes here.</p>
+          </div>
+          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+            <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="Redux" class="w-52 m-auto rounded-lg mb-4 p-3" />
+            <h6 class="text-center text-xl font-bold mb-2">Redux</h6>
+            <p class="text-gray-700 text-center">Card description goes here.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Skills end -->
     </div>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const downIcon = document.getElementById("down-icon");
+      const upIcon = document.getElementById("up-icon");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      downIcon.addEventListener("click", () => {
+        downIcon.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
