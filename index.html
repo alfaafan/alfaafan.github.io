@@ -53,10 +53,10 @@
     </nav>
     <!-- Navbar End -->
 
-    <div class="container flex flex-col justify-center items-center text-gray-800">
+    <div class="container min-w-full flex flex-col justify-center items-center text-gray-800">
       <!-- Hero -->
-      <header class="md:border md:shadow-md rounded-md grid sm:flex justify-center place-items-center items-center h-screen w-screen p-5">
-        <div class="profile text-center">
+      <header class="rounded-md grid sm:flex justify-center place-items-center items-center h-screen w-screen p-5">
+        <div class="profile text-center lg:grid lg:grid-cols-2">
           <img src="/image/programmer.svg" alt="Alfaafan" width="300px" class="place-self-center rounded-lg m-auto" />
           <div class="profile-info md:text-left text-2xl">
             <h3 class="md:text-3xl max-sm:mt-3 mb-3 font-thin text-lg">Hello, I'm</h3>
@@ -66,19 +66,19 @@
               Achmad
             </h1>
             <h3 class="md:text-3xl text-lg font-thin mb-3">Web Developer | Software Engineer</h3>
-            <button class="rounded-full mt-3 p-3 border-2 border-black bg-gray-800 hover:bg-gray-50 text-white hover:text-black text-lg"><a href="https://www.linkedin.com/in/alfaafan-yusufa-achmad-712953174/">View resume</a></button>
+            <button class="rounded-full mt-3 me-3 p-3 border-2 border-gray-800 bg-gray-800 hover:bg-gray-50 text-gray-50 hover:text-black text-lg">
+              <a href="https://www.linkedin.com/in/alfaafan-yusufa-achmad-712953174/">View resume</a>
+            </button>
+            <button class="rounded-full mt-3 p-3 border-2 border-gray-800 hover:bg-gray-800 bg-gray-50 hover:text-gray-50 text-gray-800 text-lg">
+              <a href="#about">About me</a>
+            </button>
           </div>
-        </div>
-        <div class="scroll-down sm:hidden border rounded-full h-10 w-10 place-content-center grid shadow-md shadow-neutral-300">
-          <a href="#about">
-            <i class="fa-solid fa-caret-down"></i>
-          </a>
         </div>
       </header>
       <!-- Hero end -->
       <!-- About -->
-      <section id="about" class="border min-h-screen w-screen p-5">
-        <h1 class="font-bold text-3xl uppercase text-center mt-5 mb-5">About me</h1>
+      <section id="about" class="min-h-screen w-screen p-5 lg:p-48">
+        <h1 class="font-bold text-3xl uppercase text-center mt-5 mb-5 lg:mb-10">About me</h1>
         <p class="font-extralight mb-3">
           As an International Relations graduate with a passion for technology, I am seeking a challenging role as a Web Developer. I am a quick learner, detail-oriented, and passionate about developing creative solutions to complex
           problems.
@@ -108,58 +108,48 @@
       </section>
       <!-- About end -->
       <!-- Skills -->
-      <section id="skills" class="border min-h-screen w-screen p-5">
-        <h1 class="mt-5 text-3xl text-center uppercase font-bold">Skills</h1>
-        <div class="skills-card-container">
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+      <section id="skills" class="min-h-screen w-screen p-5">
+        <h1 class="mt-5 text-3xl text-center uppercase font-bold mb-3">Skills</h1>
+        <div class="skills-card-container md:grid md:grid-cols-3 lg:grid-cols-5 md:content-center md:overflow-scroll md:gap-4">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">HTML</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">HTML</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">CSS</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">CSS</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="Javascript" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">Javascript</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">Javascript</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">React.js</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">React.js</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">Next.js</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">Next.js</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="Redux" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">Redux</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">Redux</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="/image/tailwind.svg" alt="Tailwind CSS" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">Tailwind CSS</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">Tailwind CSS</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="/image/bootstrap.svg" alt="Bootstrap" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">Bootstrap</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">Bootstrap</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="/image/node.svg" alt="node.js" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">Node.js</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">Node.js</h6>
           </div>
-          <div class="skills-card w-3/4 m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
+          <div class="skills-card m-auto flex flex-col align-middle justify-center rounded-lg shadow-md shadow-gray-200 p-4 mb-3">
             <img src="/image/express.svg" alt="express.js" class="w-52 m-auto rounded-lg mb-4 p-3" />
-            <h6 class="text-center text-xl font-bold mb-2">Express.js</h6>
-            <p class="text-gray-700 text-center">Card description goes here.</p>
+            <h6 class="text-center text-xl mb-2">Express.js</h6>
           </div>
         </div>
       </section>
@@ -168,7 +158,7 @@
       <section id="portfolio" class="min-h-screen p-5 text-center">
         <h1 class="font-bold uppercase text-3xl my-5">My Portfolio</h1>
         <div id="portfolio-container" class="p-5">
-          <div class="max-w-sm w-4/5 mx-auto rounded overflow-hidden shadow-lg">
+          <div class="max-w-sm mx-auto rounded overflow-hidden shadow-lg">
             <img class="w-full" src="https://cdn.worldvectorlogo.com/logos/redux.svg" class="w-52" alt="Project Image" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Project Title</div>
@@ -186,7 +176,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-lg py-4 h-52 grid">
+    <footer class="bg-gray-800 text-white text-lg py-4 h-16 grid">
       <div class="container mx-auto flex flex-wrap justify-center">
         <div class="flex items-center">
           <span class="mr-4">© <a href="/" class="hover:underline">Alfaafan Yusufa Achmad</a>.</span>
